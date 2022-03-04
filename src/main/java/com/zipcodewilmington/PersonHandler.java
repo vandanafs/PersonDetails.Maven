@@ -21,13 +21,21 @@ public class PersonHandler {
                 // append `stringRepresentation` to `result` variable
 
             // end loop
+        String Person;
+        int i=0;
+        while(i<personArray.length){
+
+            result+= personArray[i].toString();
+            i++;
+        }
         return result;
+
     }
 
 
 
     public String forLoop() {
-        String result = "";
+
         // identify initial value
         // identify terminal condition
         // identify increment
@@ -39,7 +47,13 @@ public class PersonHandler {
                 // append `stringRepresentation` to `result` variable
             // end loop
 
-        return result;
+        String person="";
+
+        for(int i=0;i<personArray.length;i++){
+            person+=  personArray[i].toString();
+
+        }
+        return person;
     }
 
 
@@ -55,6 +69,10 @@ public class PersonHandler {
                 // append `stringRepresentation` to `result` variable
             // end loop
 
+        for( Person  s:personArray){
+            result+= s.toString();
+
+        }
         return result;
     }
 
